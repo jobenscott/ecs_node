@@ -1,0 +1,31 @@
+{
+    "executionRoleArn": "arn:aws:iam::410628466457:role/ecsTaskExecutionRole",
+    "containerDefinitions": [
+        {   
+            "command": [
+                "/bin/sh -c \"cd /home; http-server . -p 80\""
+            ],
+            "entryPoint": [
+                "sh",
+                "-c"
+            ],  
+            "name": "sample-node-website",
+            "image": "<IMAGE1_NAME>",
+            "essential": true,
+            "portMappings": [
+                {
+                    "hostPort": 80,
+                    "protocol": "tcp",
+                    "containerPort": 80
+                }
+            ]
+        }
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "networkMode": "awsvpc",
+    "cpu": "256",
+    "memory": "512",
+    "family": "ecs-demo-node"
+}
