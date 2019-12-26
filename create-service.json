@@ -3,7 +3,7 @@
     "cluster": "node-app",
     "loadBalancers": [
         {
-            "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:410628466457:targetgroup/auto-dep-lb-tg-1/12594d212347bf6c",
+            "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:410628466457:targetgroup/auto-deploy-tg-1/c74c827f2836c90e",
             "containerName": "sample-website",
             "containerPort": 80
         }
