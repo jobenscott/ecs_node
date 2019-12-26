@@ -1,10 +1,10 @@
 {
-    "taskDefinition": "ecs-demo-node:1",
-    "cluster": "node-ecs-cluster",
+    "taskDefinition": "auto-deploy-node-task:1",
+    "cluster": "node-app",
     "loadBalancers": [
         {
-            "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:410628466457:targetgroup/node-target-group-1/fcfcb2d09dbe2d94",
-            "containerName": "sample-node-website",
+            "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:410628466457:targetgroup/auto-dep-lb-tg-1/12594d212347bf6c",
+            "containerName": "sample-website",
             "containerPort": 80
         }
     ],
@@ -21,7 +21,7 @@
                 "subnet-e9bf838e"
             ],
             "securityGroups": [
-                "sg-659bb835"
+                "sg-05b81a0eb682c9c07"
             ],
             "assignPublicIp": "ENABLED"
         }
