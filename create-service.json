@@ -21,7 +21,7 @@
                 "subnet-0ff579999344fc668"
             ],
             "securityGroups": [
-                "sg-05b81a0eb682c9c07"
+                "sg-0d3c9521d6f49fadd"
             ],
             "assignPublicIp": "ENABLED"
         }
