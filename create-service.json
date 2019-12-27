@@ -1,15 +1,15 @@
 {
     "taskDefinition": "auto-deploy-node-task:6",
-    "cluster": "node-app",
+    "cluster": "node-app-auto",
     "loadBalancers": [
         {
-            "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:410628466457:targetgroup/node-auto-dep-tg-1/b45761db1b639cac",
+            "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:410628466457:targetgroup/node-app-auto-tg-1/8f7e98bfc090a7a0",
             "containerName": "sample-website",
             "containerPort": 80
         }
     ],
     "desiredCount": 1,
-    "launchType": "EC2",
+    "launchType": "FARGATE",
     "schedulingStrategy": "REPLICA",
     "deploymentController": {
         "type": "CODE_DEPLOY"
@@ -17,11 +17,11 @@
     "networkConfiguration": {
         "awsvpcConfiguration": {
             "subnets": [
-		"subnet-0ede60efcaa389186",
-                "subnet-0ff579999344fc668"
+		"subnet-dc477df2",
+                "subnet-e9bf838e"
             ],
             "securityGroups": [
-                "sg-0d3c9521d6f49fadd"
+                "sg-05b81a0eb682c9c07"
             ]
         }
     }
