@@ -9,7 +9,7 @@
         }
     ],
     "desiredCount": 1,
-    "launchType": "FARGATE",
+    "launchType": "EC2",
     "schedulingStrategy": "REPLICA",
     "deploymentController": {
         "type": "CODE_DEPLOY"
