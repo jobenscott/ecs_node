@@ -55,7 +55,7 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:410628466457:task-definition/auto-deploy-node-task:29",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:410628466457:task-definition/auto-deploy-node-task",
   "family": "auto-deploy-node-task",
   "requiresAttributes": [
     {
