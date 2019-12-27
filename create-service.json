@@ -22,8 +22,7 @@
             ],
             "securityGroups": [
                 "sg-0d3c9521d6f49fadd"
-            ],
-            "assignPublicIp": "ENABLED"
+            ]
         }
     }
 }
