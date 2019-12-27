@@ -1,5 +1,5 @@
 {
-    "taskDefinition": "auto-deploy-node-task:25",
+    "taskDefinition": "auto-deploy-node-task"
     "cluster": "node-app-auto",
     "loadBalancers": [
         {
